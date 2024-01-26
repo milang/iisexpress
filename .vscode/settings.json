@@ -1,6 +1,21 @@
 {
-    "cSpell.words": [
-        "iisexpress",
-        "pwsh"
-    ]
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.markdownlint": "explicit"
+  },
+
+  // spell checker settings
+  "cSpell.language": "en-US",
+  "cSpell.words": ["iisexpress", "pwsh"],
+
+  // markdownlint extension settings
+  "markdownlint.config": {
+    "MD007": { "indent": 4 }
+  },
+
+  // powershell settings
+  "powershell.codeFormatting.alignPropertyValuePairs": false,
+  "powershell.codeFormatting.pipelineIndentationStyle": "IncreaseIndentationForFirstPipeline",
+  "powershell.codeFormatting.preset": "OTBS", // "One True Brace Style" a.k.a. K&R brace style, https://github.com/PoshCode/PowerShellPracticeAndStyle/issues/81#issuecomment-285835313
+  "powershell.codeFormatting.useCorrectCasing": true
 }

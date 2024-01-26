@@ -8,14 +8,14 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4 # https://github.com/actions/checkout
 
       - name: Run build script
         id: runBuild
         run: ./Build.ps1
         shell: pwsh -File "{0}"
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4 # https://github.com/actions/upload-artifact
         with:
           name: iisexpress
           path: ./iisexpress.7z
