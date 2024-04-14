@@ -4,4 +4,4 @@
 
 Extract the latest IISExpress binaries from GitHub Actions VM
 
-The latest release is currently IIS Express 10.0.25973.1000 (2023-10-12).
+The latest release is currently IIS Express 10.0.26013.1000 (2023-12-08).
