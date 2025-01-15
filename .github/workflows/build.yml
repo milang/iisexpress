@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: windows-2025 # https://github.com/actions/runner-images/issues/11228, "Windows Server 2025 is now available"
     steps:
       - uses: actions/checkout@v4 # https://github.com/actions/checkout
 
