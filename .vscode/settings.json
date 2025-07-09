@@ -1,11 +1,16 @@
 {
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.markdownlint": "explicit"
+    "source.fixAll": "explicit"
+  },
+
+  "files.exclude": {
+    "**/.DS_Store": true
   },
 
   // spell checker settings
   "cSpell.language": "en-US",
+  "cSpell.flagWords": ["colour"],
   "cSpell.words": ["endgroup", "iisexpress", "pwsh"],
 
   // markdownlint extension settings
