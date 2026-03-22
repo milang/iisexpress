@@ -4,18 +4,27 @@ on:
   # run this workflow manually from the "Actions" tab
   workflow_dispatch:
 
+permissions:
+  # explicit permissions are now recommended
+  contents: read
+
 jobs:
   build:
     runs-on: windows-2025 # https://github.com/actions/runner-images/issues/11228, "Windows Server 2025 is now available"
     steps:
-      - uses: actions/checkout@v4 # https://github.com/actions/checkout
+      - name: Checkout repository
+        uses: actions/checkout@v4 # https://github.com/actions/checkout
+        with:
+          fetch-depth: 1
 
       - name: Run build script
-        id: runBuild
-        run: ./Build.ps1
-        shell: pwsh -File "{0}"
+        shell: pwsh
+        run: |
+          ./Build.ps1
 
-      - uses: actions/upload-artifact@v4 # https://github.com/actions/upload-artifact
+      - name: Upload result
+        uses: actions/upload-artifact@v4 # https://github.com/actions/upload-artifact
         with:
           name: iisexpress
           path: ./iisexpress.7z
+          if-no-files-found: error
