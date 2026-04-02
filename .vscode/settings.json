@@ -1,3 +1,4 @@
+// spell-checker:words otbs
 {
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
@@ -9,8 +10,9 @@
   },
 
   // spell checker settings
+  "cSpell.ignorePaths": [".git"],
   "cSpell.language": "en-US",
-  "cSpell.flagWords": ["colour"],
+  "cSpell.flagWords": ["colour"], // spell-checker:disable-line
   "cSpell.words": ["endgroup", "iisexpress", "pwsh"],
 
   // markdownlint extension settings
