@@ -13,7 +13,7 @@ jobs:
     runs-on: windows-2025 # https://github.com/actions/runner-images/issues/11228, "Windows Server 2025 is now available"
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6 # https://github.com/actions/checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # https://github.com/actions/checkout/releases/tag/v6.0.2, 2026-01-09; see https://github.blog/security/supply-chain-security/securing-the-open-source-supply-chain-across-github/#h-what-you-can-do-today for hash rationale
         with:
           fetch-depth: 1
 
@@ -23,7 +23,7 @@ jobs:
           ./Build.ps1
 
       - name: Upload result
-        uses: actions/upload-artifact@v7 # https://github.com/actions/upload-artifact
+        uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # https://github.com/actions/upload-artifact/releases/tag/v7.0.0, 2026-02-26
         with:
           name: iisexpress
           path: ./iisexpress.7z
