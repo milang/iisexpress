@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   build:
-    runs-on: windows-2025 # https://github.com/actions/runner-images/issues/11228, "Windows Server 2025 is now available"
+    runs-on: windows-2025-vs2026 # https://github.blog/changelog/2026-02-05-github-actions-early-february-2026-updates/#windows-server-2025-with-visual-studio-2026-image-now-available-for-github-hosted-runners, "Windows Server 2025 with Visual Studio 2026 image now available for GitHub-hosted runners"
     steps:
       - name: Checkout repository
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # https://github.com/actions/checkout/releases/tag/v6.0.2, 2026-01-09; see https://github.blog/security/supply-chain-security/securing-the-open-source-supply-chain-across-github/#h-what-you-can-do-today for hash rationale
@@ -23,7 +23,7 @@ jobs:
           ./Build.ps1
 
       - name: Upload result
-        uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # https://github.com/actions/upload-artifact/releases/tag/v7.0.0, 2026-02-26
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # https://github.com/actions/upload-artifact/releases/tag/v7.0.1, 2026-04-10
         with:
           name: iisexpress
           path: ./iisexpress.7z
