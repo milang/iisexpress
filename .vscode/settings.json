@@ -1,4 +1,4 @@
-// spell-checker:words otbs
+// spell-checker:words esbenp otbs
 {
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
@@ -8,6 +8,11 @@
   "files.exclude": {
     "**/.DS_Store": true
   },
+  "files.associations": {
+    "LICENSE": "plaintext"
+  },
+
+  // settings for extensions below
 
   // spell checker settings
   "cSpell.ignorePaths": [".git"],
@@ -20,9 +25,20 @@
     "MD007": { "indent": 4 }
   },
 
+  // redhat xml extension settings
+  "xml.format.maxLineWidth": 0,
+
   // powershell settings
   "powershell.codeFormatting.alignPropertyValuePairs": false,
   "powershell.codeFormatting.pipelineIndentationStyle": "IncreaseIndentationForFirstPipeline",
   "powershell.codeFormatting.preset": "OTBS", // "One True Brace Style" a.k.a. K&R brace style, https://github.com/PoshCode/PowerShellPracticeAndStyle/issues/81#issuecomment-285835313
-  "powershell.codeFormatting.useCorrectCasing": true
+  "powershell.codeFormatting.useCorrectCasing": true,
+
+  // language associations
+  "[xml]": {
+    "files.trimFinalNewlines": false
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

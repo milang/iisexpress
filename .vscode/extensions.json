@@ -1,8 +1,12 @@
+// spell-checker:words davidanson esbenp
 {
   "recommendations": [
     "davidanson.vscode-markdownlint",
     "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
     "ms-vscode.powershell",
+    "redhat.vscode-xml",
+    "redhat.vscode-yaml",
     "streetsidesoftware.code-spell-checker"
   ]
 }
