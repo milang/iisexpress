@@ -13,7 +13,7 @@ jobs:
     runs-on: windows-2025-vs2026 # https://github.blog/changelog/2026-02-05-github-actions-early-february-2026-updates/#windows-server-2025-with-visual-studio-2026-image-now-available-for-github-hosted-runners, "Windows Server 2025 with Visual Studio 2026 image now available for GitHub-hosted runners"
     steps:
       - name: Checkout repository
-        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # https://github.com/actions/checkout/releases/tag/v6.0.3, 2026-06-02; see https://github.blog/security/supply-chain-security/securing-the-open-source-supply-chain-across-github/#h-what-you-can-do-today for hash rationale
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # https://github.com/actions/checkout/releases/tag/v7.0.0, 2026-06-18; see https://github.blog/security/supply-chain-security/securing-the-open-source-supply-chain-across-github/#h-what-you-can-do-today for hash rationale
         with:
           fetch-depth: 1
 
